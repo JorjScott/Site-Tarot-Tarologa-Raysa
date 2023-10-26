@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja</title>
+  <style>
+    /* Estilos para a navbar */
+    .navbar {
+      background-color: purple;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      border: 1px solid white; /* Adicionando borda branca aos botões da navbar */
+      padding: 5px 10px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Estilos para os produtos */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .product-box {
+      width: 30%; /* Ajustando a largura para exibir 3 produtos por linha */
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s; /* Adicionando transição suave para a transformação e sombra */
+    }
+    .product-box img {
+      max-width: 100%;
+    }
+    /* Efeito de destaque */
+    .product-box:hover {
+      transform: scale(1.1); /* Amplia o produto quando o mouse está sobre ele */
+      z-index: 1; /* Coloca o produto destacado sobre os outros */
+      box-shadow: 0 12px 12px -12px purple; /* Adiciona sombra da cor da navbar */
+    }
+
+    /* Estilos para o footer */
+    .footer {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding-top: 40px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Minha Loja</div>
+    <a href="#">Página Inicial</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+    <a href="#">Sobre</a>
+    <a href="#">Ajuda</a>
+    <div class="logo">Rascunho da Logo</div>
+  </div>
+
+  <div class="product-container">
+    <!-- Produto 1 a 3 -->
+    <div class="product-box">
+      <img src="produto1.jpg" alt="Produto 1">
+      <p>Descrição do Produto 1</p>
+    </div>
+    <div class="product-box">
+      <img src="produto2.jpg" alt="Produto 2">
+      <p>Descrição do Produto 2</p>
+    </div>
+    <div class="product-box">
+      <img src="produto3.jpg" alt="Produto 3">
+      <p>Descrição do Produto 3</p>
+    </div>
+
+    <!-- Produto 4 a 6 -->
+    <div class="product-box">
+      <img src="produto4.jpg" alt="Produto 4">
+      <p>Descrição do Produto 4</p>
+    </div>
+    <div class="product-box">
+      <img src="produto5.jpg" alt="Produto 5">
+      <p>Descrição do Produto 5</p>
+    </div>
+    <div class="product-box">
+      <img src="produto6.jpg" alt="Produto 6">
+      <p>Descrição do Produto 6</p>
+    </div>
+
+    <!-- Produto 7 a 9 -->
+    <div class="product-box">
+      <img src="produto7.jpg" alt="Produto 7">
+      <p>Descrição do Produto 7</p>
+    </div>
+    <div class="product-box">
+      <img src="produto8.jpg" alt="Produto 8">
+      <p>Descrição do Produto 8</p>
+    </div>
+    <div class="product-box">
+      <img src="produto9.jpg" alt="Produto 9">
+      <p>Descrição do Produto 9</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Entre em contato: Instagram</p>
+    <p>© 2023 Minha Loja. Todos os direitos reservados.</p>
+  </div>
+</body>
+</html>
