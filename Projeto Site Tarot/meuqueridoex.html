@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Adicione estilos personalizados aqui, se necessário */
+        .navbar {
+            background-color: purple;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
         .product-container {
             display: flex;
             justify-content: space-between;
@@ -33,41 +42,11 @@
         }
         .product-price {
             font-size: 24px;
-            color: #552a75;
+            color: purple;
         }
-        .navbar {
-  background-color: #552a75;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-        .navbar a {
-  text-decoration: none;
-  color: white;
-}
-        .navbar img {
-  max-height: 100px;
-  margin: 0 auto; /* Centralizar horizontalmente */
-  display: block; /* Garantir que a margem funcione */
-}
-        /* Centralize a logo horizontalmente */
-        .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto; /* Centralize horizontalmente */
-        }
-
-        /* Estilos para a logo */
-        .logo img {
-        max-height: 100px;
-        }
-
         .buy-button {
             display: inline-block;
-            background-color: #552a75;
+            background-color: purple;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -93,18 +72,15 @@
     </style>
 </head>
 <body>
-    <div class="navbar navbar-expand-lg">
-        <a href="index.html" class="navbar-brand">
-            <img src="logo.jpeg" alt="Minha Loja Logo" class="img-fluid" style="max-height: 100px;">
-        </a>
-    </div>
-              
+    <div class="navbar">
+        <a href="index.html">
+            <img src="sua-logo.png" alt="Logo da Loja">
         </a>
     </div>
     <div class="container">
         <div class="product-container">
             <div class="product-image">
-                <img src="imagemteste2.png" alt="teste">
+                <img src="imagemteste.webp" alt="teste">
             </div>
             <div class="product-description">
                 <h1>Nome do Produto</h1>
@@ -124,7 +100,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagemteste2.png" alt="Screenshot do WhatsApp 1">
+                <img src="imagemteste.webp" alt="Screenshot do WhatsApp 1">
             </div>
             <div class="carousel-item">
                 <img src="imagemteste.webp" alt="Screenshot do WhatsApp 2">
